@@ -1,0 +1,413 @@
+2026-05-13 17:17:50.568 +05:30 [INF] Executed DbCommand (7,513ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+CREATE DATABASE [StudentDB];
+2026-05-13 17:17:51.903 +05:30 [INF] Executed DbCommand (1,299ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [StudentDB] SET READ_COMMITTED_SNAPSHOT ON;
+END;
+2026-05-13 17:17:51.955 +05:30 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-05-13 17:17:52.127 +05:30 [INF] Executed DbCommand (103ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+2026-05-13 17:17:52.132 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-05-13 17:17:52.158 +05:30 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-05-13 17:17:52.741 +05:30 [INF] Executed DbCommand (580ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-05-13 17:17:52.757 +05:30 [INF] Applying migration '20260513114717_InitialCreate'.
+2026-05-13 17:17:52.864 +05:30 [INF] Executed DbCommand (45ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Students] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    [Email] nvarchar(max) NOT NULL,
+    [Age] int NOT NULL,
+    [Course] nvarchar(max) NOT NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_Students] PRIMARY KEY ([Id])
+);
+2026-05-13 17:17:52.876 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260513114717_InitialCreate', N'8.0.8');
+2026-05-13 17:19:29.336 +05:30 [INF] User profile is available. Using 'C:\Users\sachi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-13 17:19:29.374 +05:30 [INF] Creating key {7b9f2e6d-773f-4b0b-a63a-0e98e59ad07b} with creation date 2026-05-13 11:49:29Z, activation date 2026-05-13 11:49:29Z, and expiration date 2026-08-11 11:49:29Z.
+2026-05-13 17:19:29.391 +05:30 [INF] Writing data to file 'C:\Users\sachi\AppData\Local\ASP.NET\DataProtection-Keys\key-7b9f2e6d-773f-4b0b-a63a-0e98e59ad07b.xml'.
+2026-05-13 17:19:29.685 +05:30 [INF] Now listening on: http://localhost:5296
+2026-05-13 17:19:29.686 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-13 17:19:29.687 +05:30 [INF] Hosting environment: Development
+2026-05-13 17:19:29.687 +05:30 [INF] Content root path: C:\Users\sachi\OneDrive\Desktop\Assesment\Backend\StudentManagementSystem
+2026-05-13 18:42:58.223 +05:30 [INF] Application is shutting down...
+2026-05-13 18:43:37.039 +05:30 [INF] User profile is available. Using 'C:\Users\sachi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-13 18:43:37.116 +05:30 [INF] Now listening on: http://localhost:5296
+2026-05-13 18:43:37.117 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-13 18:43:37.118 +05:30 [INF] Hosting environment: Development
+2026-05-13 18:43:37.118 +05:30 [INF] Content root path: C:\Users\sachi\OneDrive\Desktop\Assesment\Backend\StudentManagementSystem
+2026-05-13 18:47:08.851 +05:30 [INF] Application is shutting down...
+2026-05-13 18:47:14.996 +05:30 [INF] User profile is available. Using 'C:\Users\sachi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-13 18:47:15.100 +05:30 [INF] Now listening on: http://localhost:5000
+2026-05-13 18:47:15.103 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-13 18:47:15.103 +05:30 [INF] Hosting environment: Production
+2026-05-13 18:47:15.103 +05:30 [INF] Content root path: C:\Users\sachi\OneDrive\Desktop\Assesment\Backend\StudentManagementSystem
+2026-05-13 18:48:05.735 +05:30 [INF] Application is shutting down...
+2026-05-13 18:48:48.121 +05:30 [INF] User profile is available. Using 'C:\Users\sachi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-13 18:48:48.214 +05:30 [INF] Now listening on: http://localhost:5296
+2026-05-13 18:48:48.216 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-13 18:48:48.217 +05:30 [INF] Hosting environment: Development
+2026-05-13 18:48:48.217 +05:30 [INF] Content root path: C:\Users\sachi\OneDrive\Desktop\Assesment\Backend\StudentManagementSystem
+2026-05-13 18:49:38.747 +05:30 [INF] Application is shutting down...
+2026-05-13 18:49:45.228 +05:30 [INF] User profile is available. Using 'C:\Users\sachi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-13 18:49:45.349 +05:30 [INF] Now listening on: http://localhost:5000
+2026-05-13 18:49:45.352 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-13 18:49:45.352 +05:30 [INF] Hosting environment: Production
+2026-05-13 18:49:45.353 +05:30 [INF] Content root path: C:\Users\sachi\OneDrive\Desktop\Assesment\Backend\StudentManagementSystem
+2026-05-13 19:25:52.589 +05:30 [INF] Application is shutting down...
+2026-05-13 19:26:41.081 +05:30 [INF] User profile is available. Using 'C:\Users\sachi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-13 19:26:41.218 +05:30 [INF] Now listening on: http://localhost:5296
+2026-05-13 19:26:41.222 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-13 19:26:41.224 +05:30 [INF] Hosting environment: Development
+2026-05-13 19:26:41.225 +05:30 [INF] Content root path: C:\Users\sachi\OneDrive\Desktop\Assesment\Backend\StudentManagementSystem
+2026-05-13 19:30:27.456 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5296/swagger - null null
+2026-05-13 19:30:27.689 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5296/swagger - 301 0 null 235.7978ms
+2026-05-13 19:30:27.724 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5296/swagger/index.html - null null
+2026-05-13 19:30:27.876 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5296/swagger/index.html - 200 null text/html;charset=utf-8 151.9883ms
+2026-05-13 19:30:28.002 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5296/swagger/swagger-ui-bundle.js - null null
+2026-05-13 19:30:28.002 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5296/swagger/swagger-ui-standalone-preset.js - null null
+2026-05-13 19:30:28.008 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5296/swagger/swagger-ui.css - null null
+2026-05-13 19:30:28.333 +05:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2026-05-13 19:30:28.479 +05:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2026-05-13 19:30:29.178 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2026-05-13 19:30:29.681 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5296/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 1679.2372ms
+2026-05-13 19:30:29.751 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5296/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 1749.2158ms
+2026-05-13 19:30:29.757 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5296/swagger/swagger-ui.css - 200 152034 text/css 1746.7177ms
+2026-05-13 19:30:30.432 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5296/swagger/favicon-32x32.png - null null
+2026-05-13 19:30:30.433 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5296/swagger/v1/swagger.json - null null
+2026-05-13 19:30:34.243 +05:30 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2026-05-13 19:30:35.013 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5296/swagger/favicon-32x32.png - 200 628 image/png 4580.9081ms
+2026-05-13 19:30:38.566 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5296/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 8130.0812ms
+2026-05-13 19:51:44.153 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5296/api/Student - application/json 133
+2026-05-13 19:51:44.522 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-05-13 19:51:45.470 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-05-13 19:51:45.825 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-05-13 19:51:47.160 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5296/api/Student - 401 0 null 3004.4494ms
+2026-05-13 20:34:44.200 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5296/api/auth/login - null null
+2026-05-13 20:34:44.999 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2026-05-13 20:34:45.064 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2026-05-13 20:34:45.148 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5296/api/auth/login - 405 0 null 947.777ms
+2026-05-13 20:37:27.925 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5296/api/auth/login - null null
+2026-05-13 20:37:28.207 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2026-05-13 20:37:28.436 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2026-05-13 20:37:29.011 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5296/api/auth/login - 405 0 null 1086.737ms
+2026-05-13 20:38:13.377 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5296/api/auth/login - null null
+2026-05-13 20:38:13.966 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2026-05-13 20:38:14.035 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2026-05-13 20:38:14.332 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5296/api/auth/login - 405 0 null 952.7346ms
+2026-05-13 20:42:28.222 +05:30 [INF] User profile is available. Using 'C:\Users\sachi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-13 20:42:28.634 +05:30 [INF] Now listening on: http://localhost:5296
+2026-05-13 20:42:28.643 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-13 20:42:28.651 +05:30 [INF] Hosting environment: Development
+2026-05-13 20:42:28.654 +05:30 [INF] Content root path: C:\Users\sachi\OneDrive\Desktop\Assesment\Backend\StudentManagementSystem
+2026-05-13 20:50:31.974 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5296/ - null null
+2026-05-13 20:50:33.654 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-05-13 20:50:34.967 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5296/ - 404 0 null 2996.832ms
+2026-05-13 20:50:36.431 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5296/, Response status code: 404
+2026-05-13 20:50:39.083 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5296/ - null null
+2026-05-13 20:50:39.617 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5296/ - 404 0 null 532.5772ms
+2026-05-13 20:50:40.382 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5296/, Response status code: 404
+2026-05-13 20:50:52.500 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5296/swagger/index.html - null null
+2026-05-13 20:50:54.025 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5296/swagger/index.html - 200 null text/html;charset=utf-8 1525.3365ms
+2026-05-13 20:50:55.674 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5296/swagger/v1/swagger.json - null null
+2026-05-13 20:50:57.161 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5296/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 1487.1679ms
+2026-05-13 20:52:20.489 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5296/api/auth/login - null null
+2026-05-13 20:52:21.200 +05:30 [INF] CORS policy execution successful.
+2026-05-13 20:52:22.252 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5296/api/auth/login - null null
+2026-05-13 20:52:22.281 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5296/api/auth/login - 204 null null 1793.4948ms
+2026-05-13 20:52:23.258 +05:30 [INF] CORS policy execution successful.
+2026-05-13 20:52:24.264 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5296/api/auth/login - application/json 42
+2026-05-13 20:52:24.605 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5296/api/auth/login - application/json 42
+2026-05-13 20:52:24.925 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5296/api/auth/login - 204 null null 2672.6684ms
+2026-05-13 20:52:25.756 +05:30 [INF] CORS policy execution successful.
+2026-05-13 20:52:26.123 +05:30 [INF] CORS policy execution successful.
+2026-05-13 20:52:26.410 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5296/api/auth/login - application/json 42
+2026-05-13 20:52:26.471 +05:30 [INF] Executing endpoint 'StudentManagementSystem.Controllers.AuthController.Login (StudentManagementSystem)'
+2026-05-13 20:52:26.628 +05:30 [INF] Executing endpoint 'StudentManagementSystem.Controllers.AuthController.Login (StudentManagementSystem)'
+2026-05-13 20:52:27.439 +05:30 [INF] CORS policy execution successful.
+2026-05-13 20:52:27.568 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5296/api/auth/login - application/json 42
+2026-05-13 20:52:28.694 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(StudentManagementSystem.Models.LoginModel) on controller StudentManagementSystem.Controllers.AuthController (StudentManagementSystem).
+2026-05-13 20:52:28.713 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(StudentManagementSystem.Models.LoginModel) on controller StudentManagementSystem.Controllers.AuthController (StudentManagementSystem).
+2026-05-13 20:52:28.873 +05:30 [INF] Executing endpoint 'StudentManagementSystem.Controllers.AuthController.Login (StudentManagementSystem)'
+2026-05-13 20:52:29.731 +05:30 [INF] CORS policy execution successful.
+2026-05-13 20:52:30.828 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5296/api/auth/login - null null
+2026-05-13 20:52:30.984 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5296/api/auth/login - null null
+2026-05-13 20:52:31.211 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(StudentManagementSystem.Models.LoginModel) on controller StudentManagementSystem.Controllers.AuthController (StudentManagementSystem).
+2026-05-13 20:52:31.211 +05:30 [INF] Executing endpoint 'StudentManagementSystem.Controllers.AuthController.Login (StudentManagementSystem)'
+2026-05-13 20:52:31.684 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-13 20:52:31.780 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-13 20:52:32.264 +05:30 [INF] CORS policy execution successful.
+2026-05-13 20:52:33.483 +05:30 [INF] CORS policy execution successful.
+2026-05-13 20:52:33.491 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(StudentManagementSystem.Models.LoginModel) on controller StudentManagementSystem.Controllers.AuthController (StudentManagementSystem).
+2026-05-13 20:52:33.496 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-13 20:52:34.365 +05:30 [INF] Executed action StudentManagementSystem.Controllers.AuthController.Login (StudentManagementSystem) in 2979.4437ms
+2026-05-13 20:52:35.073 +05:30 [INF] Executed action StudentManagementSystem.Controllers.AuthController.Login (StudentManagementSystem) in 4549.4608ms
+2026-05-13 20:52:35.567 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5296/api/auth/login - 204 null null 4731.9633ms
+2026-05-13 20:52:35.847 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5296/api/auth/login - 204 null null 4863.3091ms
+2026-05-13 20:52:36.911 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-13 20:52:37.370 +05:30 [INF] Executed action StudentManagementSystem.Controllers.AuthController.Login (StudentManagementSystem) in 3881.0851ms
+2026-05-13 20:52:37.755 +05:30 [INF] Executed endpoint 'StudentManagementSystem.Controllers.AuthController.Login (StudentManagementSystem)'
+2026-05-13 20:52:38.279 +05:30 [INF] Executed endpoint 'StudentManagementSystem.Controllers.AuthController.Login (StudentManagementSystem)'
+2026-05-13 20:52:39.490 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5296/api/auth/login - null null
+2026-05-13 20:52:40.954 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5296/api/auth/login - null null
+2026-05-13 20:52:41.289 +05:30 [INF] Executed action StudentManagementSystem.Controllers.AuthController.Login (StudentManagementSystem) in 4379.5066ms
+2026-05-13 20:52:41.606 +05:30 [INF] Executed endpoint 'StudentManagementSystem.Controllers.AuthController.Login (StudentManagementSystem)'
+2026-05-13 20:52:41.653 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5296/api/auth/login - 200 null application/json; charset=utf-8 17047.9571ms
+2026-05-13 20:52:42.199 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5296/api/auth/login - 200 null application/json; charset=utf-8 17935.0529ms
+2026-05-13 20:52:42.364 +05:30 [INF] CORS policy execution successful.
+2026-05-13 20:52:42.826 +05:30 [INF] CORS policy execution successful.
+2026-05-13 20:52:43.117 +05:30 [INF] Executed endpoint 'StudentManagementSystem.Controllers.AuthController.Login (StudentManagementSystem)'
+2026-05-13 20:52:43.487 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5296/api/auth/login - 200 null application/json; charset=utf-8 17077.1447ms
+2026-05-13 20:52:44.781 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5296/api/auth/login - null null
+2026-05-13 20:52:44.982 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5296/api/auth/login - null null
+2026-05-13 20:52:45.984 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5296/api/auth/login - 204 null null 6493.9286ms
+2026-05-13 20:52:46.585 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5296/api/auth/login - 204 null null 5631.0833ms
+2026-05-13 20:52:46.902 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5296/api/auth/login - 200 null application/json; charset=utf-8 19333.951ms
+2026-05-13 20:52:47.495 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5296/api/auth/login - null null
+2026-05-13 20:52:47.881 +05:30 [INF] CORS policy execution successful.
+2026-05-13 20:52:47.886 +05:30 [INF] CORS policy execution successful.
+2026-05-13 20:52:49.170 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5296/api/auth/login - null null
+2026-05-13 20:52:50.469 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5296/api/auth/login - null null
+2026-05-13 20:52:52.591 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5296/api/auth/login - null null
+2026-05-13 20:52:53.609 +05:30 [INF] CORS policy execution successful.
+2026-05-13 20:52:53.747 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5296/api/auth/login - 204 null null 8965.9844ms
+2026-05-13 20:52:53.754 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5296/api/auth/login - 204 null null 8772.3993ms
+2026-05-13 20:52:53.757 +05:30 [INF] CORS policy execution successful.
+2026-05-13 20:52:56.991 +05:30 [INF] CORS policy execution successful.
+2026-05-13 20:52:57.742 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5296/api/auth/login - 204 null null 10246.7068ms
+2026-05-13 20:52:55.113 +05:30 [INF] CORS policy execution successful.
+2026-05-13 20:52:59.309 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5296/api/auth/login - null null
+2026-05-13 20:52:59.549 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5296/api/auth/login - application/json 42
+2026-05-13 20:53:00.340 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5296/api/auth/login - 204 null null 11170.3899ms
+2026-05-13 20:52:58.055 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5296/api/auth/login - application/json 42
+2026-05-13 20:53:00.346 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5296/api/auth/login - application/json 42
+2026-05-13 20:53:01.113 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5296/api/auth/login - 204 null null 8522.4082ms
+2026-05-13 20:53:02.049 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5296/api/auth/login - 204 null null 11580.2222ms
+2026-05-13 20:53:01.144 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5296/api/auth/login - application/json 42
+2026-05-13 20:53:02.068 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5296/api/auth/login - application/json 42
+2026-05-13 20:53:02.629 +05:30 [INF] CORS policy execution successful.
+2026-05-13 20:53:03.594 +05:30 [INF] CORS policy execution successful.
+2026-05-13 20:53:07.975 +05:30 [INF] CORS policy execution successful.
+2026-05-13 20:53:08.961 +05:30 [INF] CORS policy execution successful.
+2026-05-13 20:53:09.452 +05:30 [INF] CORS policy execution successful.
+2026-05-13 20:53:09.581 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5296/api/auth/login - 204 null null 10271.6695ms
+2026-05-13 20:53:09.558 +05:30 [INF] CORS policy execution successful.
+2026-05-13 20:53:09.595 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5296/api/auth/login - application/json 42
+2026-05-13 20:53:09.604 +05:30 [INF] Executing endpoint 'StudentManagementSystem.Controllers.AuthController.Login (StudentManagementSystem)'
+2026-05-13 20:53:09.753 +05:30 [INF] Executing endpoint 'StudentManagementSystem.Controllers.AuthController.Login (StudentManagementSystem)'
+2026-05-13 20:53:09.944 +05:30 [INF] Executing endpoint 'StudentManagementSystem.Controllers.AuthController.Login (StudentManagementSystem)'
+2026-05-13 20:53:10.060 +05:30 [INF] Executing endpoint 'StudentManagementSystem.Controllers.AuthController.Login (StudentManagementSystem)'
+2026-05-13 20:53:10.570 +05:30 [INF] Executing endpoint 'StudentManagementSystem.Controllers.AuthController.Login (StudentManagementSystem)'
+2026-05-13 20:53:12.068 +05:30 [INF] CORS policy execution successful.
+2026-05-13 20:53:12.585 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(StudentManagementSystem.Models.LoginModel) on controller StudentManagementSystem.Controllers.AuthController (StudentManagementSystem).
+2026-05-13 20:53:13.630 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(StudentManagementSystem.Models.LoginModel) on controller StudentManagementSystem.Controllers.AuthController (StudentManagementSystem).
+2026-05-13 20:53:14.021 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(StudentManagementSystem.Models.LoginModel) on controller StudentManagementSystem.Controllers.AuthController (StudentManagementSystem).
+2026-05-13 20:53:14.907 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(StudentManagementSystem.Models.LoginModel) on controller StudentManagementSystem.Controllers.AuthController (StudentManagementSystem).
+2026-05-13 20:53:15.371 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(StudentManagementSystem.Models.LoginModel) on controller StudentManagementSystem.Controllers.AuthController (StudentManagementSystem).
+2026-05-13 20:53:15.485 +05:30 [INF] Executing endpoint 'StudentManagementSystem.Controllers.AuthController.Login (StudentManagementSystem)'
+2026-05-13 20:53:16.192 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-13 20:53:16.689 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-13 20:53:17.488 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-13 20:53:17.820 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-13 20:53:19.725 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-13 20:53:20.043 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(StudentManagementSystem.Models.LoginModel) on controller StudentManagementSystem.Controllers.AuthController (StudentManagementSystem).
+2026-05-13 20:53:20.588 +05:30 [INF] Executed action StudentManagementSystem.Controllers.AuthController.Login (StudentManagementSystem) in 4397.3079ms
+2026-05-13 20:53:21.056 +05:30 [INF] Executed action StudentManagementSystem.Controllers.AuthController.Login (StudentManagementSystem) in 4367.7348ms
+2026-05-13 20:53:21.335 +05:30 [INF] Executed action StudentManagementSystem.Controllers.AuthController.Login (StudentManagementSystem) in 3847.4258ms
+2026-05-13 20:53:21.673 +05:30 [INF] Executed action StudentManagementSystem.Controllers.AuthController.Login (StudentManagementSystem) in 3856.6038ms
+2026-05-13 20:53:21.862 +05:30 [INF] Executed action StudentManagementSystem.Controllers.AuthController.Login (StudentManagementSystem) in 2152.6962ms
+2026-05-13 20:53:22.702 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-13 20:53:22.870 +05:30 [INF] Executed endpoint 'StudentManagementSystem.Controllers.AuthController.Login (StudentManagementSystem)'
+2026-05-13 20:53:23.123 +05:30 [INF] Executed endpoint 'StudentManagementSystem.Controllers.AuthController.Login (StudentManagementSystem)'
+2026-05-13 20:53:23.537 +05:30 [INF] Executed endpoint 'StudentManagementSystem.Controllers.AuthController.Login (StudentManagementSystem)'
+2026-05-13 20:53:23.542 +05:30 [INF] Executed endpoint 'StudentManagementSystem.Controllers.AuthController.Login (StudentManagementSystem)'
+2026-05-13 20:53:23.692 +05:30 [INF] Executed endpoint 'StudentManagementSystem.Controllers.AuthController.Login (StudentManagementSystem)'
+2026-05-13 20:53:24.248 +05:30 [INF] Executed action StudentManagementSystem.Controllers.AuthController.Login (StudentManagementSystem) in 1556.2772ms
+2026-05-13 20:53:25.037 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5296/api/auth/login - 200 null application/json; charset=utf-8 25482.8342ms
+2026-05-13 20:53:25.445 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5296/api/auth/login - 200 null application/json; charset=utf-8 27390.4913ms
+2026-05-13 20:53:25.620 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5296/api/auth/login - 200 null application/json; charset=utf-8 25274.5749ms
+2026-05-13 20:53:25.826 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5296/api/auth/login - 200 null application/json; charset=utf-8 24681.6611ms
+2026-05-13 20:53:26.177 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5296/api/auth/login - 200 null application/json; charset=utf-8 24109.1753ms
+2026-05-13 20:53:26.375 +05:30 [INF] Executed endpoint 'StudentManagementSystem.Controllers.AuthController.Login (StudentManagementSystem)'
+2026-05-13 20:53:31.757 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5296/api/auth/login - 200 null application/json; charset=utf-8 22162.4331ms
+2026-05-13 20:54:32.560 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5296/api/auth/login - null null
+2026-05-13 20:54:32.747 +05:30 [INF] CORS policy execution successful.
+2026-05-13 20:54:32.760 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5296/api/auth/login - 204 null null 199.5487ms
+2026-05-13 20:54:33.099 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5296/api/auth/login - application/json 42
+2026-05-13 20:54:33.421 +05:30 [INF] CORS policy execution successful.
+2026-05-13 20:54:33.559 +05:30 [INF] Executing endpoint 'StudentManagementSystem.Controllers.AuthController.Login (StudentManagementSystem)'
+2026-05-13 20:54:33.771 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(StudentManagementSystem.Models.LoginModel) on controller StudentManagementSystem.Controllers.AuthController (StudentManagementSystem).
+2026-05-13 20:54:34.270 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-13 20:54:34.477 +05:30 [INF] Executed action StudentManagementSystem.Controllers.AuthController.Login (StudentManagementSystem) in 207.4083ms
+2026-05-13 20:54:34.623 +05:30 [INF] Executed endpoint 'StudentManagementSystem.Controllers.AuthController.Login (StudentManagementSystem)'
+2026-05-13 20:54:34.777 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5296/api/auth/login - 200 null application/json; charset=utf-8 1678.3035ms
+2026-05-13 20:54:37.614 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5296/api/student - null null
+2026-05-13 20:54:37.640 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5296/api/student - null null
+2026-05-13 20:54:39.091 +05:30 [INF] CORS policy execution successful.
+2026-05-13 20:54:39.488 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5296/api/student - 204 null null 1874.0508ms
+2026-05-13 20:54:39.446 +05:30 [INF] CORS policy execution successful.
+2026-05-13 20:54:39.914 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5296/api/student - null null
+2026-05-13 20:54:39.931 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5296/api/student - 204 null null 2291.0384ms
+2026-05-13 20:54:40.336 +05:30 [INF] CORS policy execution successful.
+2026-05-13 20:54:41.052 +05:30 [INF] Executing endpoint 'StudentManagementSystem.Controllers.StudentController.GetAllStudents (StudentManagementSystem)'
+2026-05-13 20:54:41.388 +05:30 [INF] Route matched with {action = "GetAllStudents", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllStudents() on controller StudentManagementSystem.Controllers.StudentController (StudentManagementSystem).
+2026-05-13 20:54:49.932 +05:30 [INF] Executed DbCommand (271ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Age], [s].[Course], [s].[CreatedDate], [s].[Email], [s].[Name]
+FROM [Students] AS [s]
+2026-05-13 20:54:50.196 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentManagementSystem.Models.Student, StudentManagementSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-13 20:54:50.420 +05:30 [INF] Executed action StudentManagementSystem.Controllers.StudentController.GetAllStudents (StudentManagementSystem) in 8737.0065ms
+2026-05-13 20:54:50.450 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5296/api/student - null null
+2026-05-13 20:54:50.610 +05:30 [INF] Executed endpoint 'StudentManagementSystem.Controllers.StudentController.GetAllStudents (StudentManagementSystem)'
+2026-05-13 20:54:50.668 +05:30 [INF] CORS policy execution successful.
+2026-05-13 20:54:50.837 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5296/api/student - 200 null application/json; charset=utf-8 10922.8248ms
+2026-05-13 20:54:50.862 +05:30 [INF] Executing endpoint 'StudentManagementSystem.Controllers.StudentController.GetAllStudents (StudentManagementSystem)'
+2026-05-13 20:54:51.685 +05:30 [INF] Route matched with {action = "GetAllStudents", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllStudents() on controller StudentManagementSystem.Controllers.StudentController (StudentManagementSystem).
+2026-05-13 20:54:51.862 +05:30 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Age], [s].[Course], [s].[CreatedDate], [s].[Email], [s].[Name]
+FROM [Students] AS [s]
+2026-05-13 20:54:52.155 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentManagementSystem.Models.Student, StudentManagementSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-13 20:54:52.362 +05:30 [INF] Executed action StudentManagementSystem.Controllers.StudentController.GetAllStudents (StudentManagementSystem) in 665.333ms
+2026-05-13 20:54:52.637 +05:30 [INF] Executed endpoint 'StudentManagementSystem.Controllers.StudentController.GetAllStudents (StudentManagementSystem)'
+2026-05-13 20:54:52.796 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5296/api/student - 200 null application/json; charset=utf-8 2345.9149ms
+2026-05-13 20:55:31.382 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5296/api/auth/login - null null
+2026-05-13 20:55:31.768 +05:30 [INF] CORS policy execution successful.
+2026-05-13 20:55:31.975 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5296/api/auth/login - 204 null null 592.8441ms
+2026-05-13 20:55:32.474 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5296/api/auth/login - application/json 42
+2026-05-13 20:55:33.208 +05:30 [INF] CORS policy execution successful.
+2026-05-13 20:55:33.407 +05:30 [INF] Executing endpoint 'StudentManagementSystem.Controllers.AuthController.Login (StudentManagementSystem)'
+2026-05-13 20:55:33.556 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(StudentManagementSystem.Models.LoginModel) on controller StudentManagementSystem.Controllers.AuthController (StudentManagementSystem).
+2026-05-13 20:55:33.866 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-13 20:55:34.089 +05:30 [INF] Executed action StudentManagementSystem.Controllers.AuthController.Login (StudentManagementSystem) in 226.3739ms
+2026-05-13 20:55:34.426 +05:30 [INF] Executed endpoint 'StudentManagementSystem.Controllers.AuthController.Login (StudentManagementSystem)'
+2026-05-13 20:55:34.773 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5296/api/auth/login - 200 null application/json; charset=utf-8 2298.3814ms
+2026-05-13 20:55:36.887 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5296/api/student - null null
+2026-05-13 20:55:36.899 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5296/api/student - null null
+2026-05-13 20:55:37.435 +05:30 [INF] CORS policy execution successful.
+2026-05-13 20:55:37.593 +05:30 [INF] CORS policy execution successful.
+2026-05-13 20:55:37.623 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5296/api/student - 204 null null 724.1939ms
+2026-05-13 20:55:37.608 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5296/api/student - 204 null null 721.0021ms
+2026-05-13 20:55:39.139 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5296/api/student - null null
+2026-05-13 20:55:39.293 +05:30 [INF] CORS policy execution successful.
+2026-05-13 20:55:39.302 +05:30 [INF] Executing endpoint 'StudentManagementSystem.Controllers.StudentController.GetAllStudents (StudentManagementSystem)'
+2026-05-13 20:55:39.474 +05:30 [INF] Route matched with {action = "GetAllStudents", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllStudents() on controller StudentManagementSystem.Controllers.StudentController (StudentManagementSystem).
+2026-05-13 20:55:40.232 +05:30 [INF] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Age], [s].[Course], [s].[CreatedDate], [s].[Email], [s].[Name]
+FROM [Students] AS [s]
+2026-05-13 20:55:40.556 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentManagementSystem.Models.Student, StudentManagementSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-13 20:55:40.754 +05:30 [INF] Executed action StudentManagementSystem.Controllers.StudentController.GetAllStudents (StudentManagementSystem) in 1123.4409ms
+2026-05-13 20:55:40.797 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5296/api/student - null null
+2026-05-13 20:55:41.427 +05:30 [INF] Executed endpoint 'StudentManagementSystem.Controllers.StudentController.GetAllStudents (StudentManagementSystem)'
+2026-05-13 20:55:41.983 +05:30 [INF] CORS policy execution successful.
+2026-05-13 20:55:42.116 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5296/api/student - 200 null application/json; charset=utf-8 2976.3886ms
+2026-05-13 20:55:42.140 +05:30 [INF] Executing endpoint 'StudentManagementSystem.Controllers.StudentController.GetAllStudents (StudentManagementSystem)'
+2026-05-13 20:55:42.689 +05:30 [INF] Route matched with {action = "GetAllStudents", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllStudents() on controller StudentManagementSystem.Controllers.StudentController (StudentManagementSystem).
+2026-05-13 20:55:42.981 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Age], [s].[Course], [s].[CreatedDate], [s].[Email], [s].[Name]
+FROM [Students] AS [s]
+2026-05-13 20:55:43.522 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentManagementSystem.Models.Student, StudentManagementSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-13 20:55:43.663 +05:30 [INF] Executed action StudentManagementSystem.Controllers.StudentController.GetAllStudents (StudentManagementSystem) in 691.4202ms
+2026-05-13 20:55:43.834 +05:30 [INF] Executed endpoint 'StudentManagementSystem.Controllers.StudentController.GetAllStudents (StudentManagementSystem)'
+2026-05-13 20:55:43.863 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5296/api/student - 200 null application/json; charset=utf-8 3066.4025ms
+2026-05-13 20:58:58.062 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5296/api/student - null null
+2026-05-13 20:58:58.085 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5296/api/student - null null
+2026-05-13 20:58:58.377 +05:30 [INF] CORS policy execution successful.
+2026-05-13 20:58:58.463 +05:30 [INF] CORS policy execution successful.
+2026-05-13 20:58:58.474 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5296/api/student - 204 null null 411.4723ms
+2026-05-13 20:58:58.486 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5296/api/student - 204 null null 400.7581ms
+2026-05-13 20:58:58.570 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5296/api/student - null null
+2026-05-13 20:58:58.584 +05:30 [INF] CORS policy execution successful.
+2026-05-13 20:58:58.592 +05:30 [INF] Executing endpoint 'StudentManagementSystem.Controllers.StudentController.GetAllStudents (StudentManagementSystem)'
+2026-05-13 20:58:58.598 +05:30 [INF] Route matched with {action = "GetAllStudents", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllStudents() on controller StudentManagementSystem.Controllers.StudentController (StudentManagementSystem).
+2026-05-13 20:58:58.633 +05:30 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Age], [s].[Course], [s].[CreatedDate], [s].[Email], [s].[Name]
+FROM [Students] AS [s]
+2026-05-13 20:58:58.648 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentManagementSystem.Models.Student, StudentManagementSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-13 20:58:58.654 +05:30 [INF] Executed action StudentManagementSystem.Controllers.StudentController.GetAllStudents (StudentManagementSystem) in 42.6376ms
+2026-05-13 20:58:58.661 +05:30 [INF] Executed endpoint 'StudentManagementSystem.Controllers.StudentController.GetAllStudents (StudentManagementSystem)'
+2026-05-13 20:58:58.665 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5296/api/student - null null
+2026-05-13 20:58:58.668 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5296/api/student - 200 null application/json; charset=utf-8 98.355ms
+2026-05-13 20:58:58.691 +05:30 [INF] CORS policy execution successful.
+2026-05-13 20:58:58.726 +05:30 [INF] Executing endpoint 'StudentManagementSystem.Controllers.StudentController.GetAllStudents (StudentManagementSystem)'
+2026-05-13 20:58:58.743 +05:30 [INF] Route matched with {action = "GetAllStudents", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllStudents() on controller StudentManagementSystem.Controllers.StudentController (StudentManagementSystem).
+2026-05-13 20:58:58.797 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Age], [s].[Course], [s].[CreatedDate], [s].[Email], [s].[Name]
+FROM [Students] AS [s]
+2026-05-13 20:58:59.634 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentManagementSystem.Models.Student, StudentManagementSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-13 20:58:59.744 +05:30 [INF] Executed action StudentManagementSystem.Controllers.StudentController.GetAllStudents (StudentManagementSystem) in 953.0032ms
+2026-05-13 20:58:59.770 +05:30 [INF] Executed endpoint 'StudentManagementSystem.Controllers.StudentController.GetAllStudents (StudentManagementSystem)'
+2026-05-13 20:58:59.792 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5296/api/student - 200 null application/json; charset=utf-8 1126.8526ms
+2026-05-13 20:59:19.257 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5296/api/student - null null
+2026-05-13 20:59:19.560 +05:30 [INF] CORS policy execution successful.
+2026-05-13 20:59:19.571 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5296/api/student - 204 null null 314.1878ms
+2026-05-13 20:59:19.717 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5296/api/student - application/json 73
+2026-05-13 20:59:20.055 +05:30 [INF] CORS policy execution successful.
+2026-05-13 20:59:20.066 +05:30 [INF] Executing endpoint 'StudentManagementSystem.Controllers.StudentController.AddStudent (StudentManagementSystem)'
+2026-05-13 20:59:20.111 +05:30 [INF] Route matched with {action = "AddStudent", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddStudent(StudentManagementSystem.Models.Student) on controller StudentManagementSystem.Controllers.StudentController (StudentManagementSystem).
+2026-05-13 20:59:22.197 +05:30 [INF] Executed DbCommand (178ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Students] ([Age], [Course], [CreatedDate], [Email], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-05-13 20:59:23.125 +05:30 [INF] Executing OkObjectResult, writing value of type 'StudentManagementSystem.Models.Student'.
+2026-05-13 20:59:23.282 +05:30 [INF] Executed action StudentManagementSystem.Controllers.StudentController.AddStudent (StudentManagementSystem) in 3055.2255ms
+2026-05-13 20:59:23.316 +05:30 [INF] Executed endpoint 'StudentManagementSystem.Controllers.StudentController.AddStudent (StudentManagementSystem)'
+2026-05-13 20:59:23.442 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5296/api/student - 200 null application/json; charset=utf-8 3723.5607ms
+2026-05-13 20:59:26.410 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5296/api/student - null null
+2026-05-13 20:59:27.401 +05:30 [INF] CORS policy execution successful.
+2026-05-13 20:59:28.919 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5296/api/student - 204 null null 2509.6911ms
+2026-05-13 20:59:29.143 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5296/api/student - null null
+2026-05-13 20:59:29.308 +05:30 [INF] CORS policy execution successful.
+2026-05-13 20:59:29.451 +05:30 [INF] Executing endpoint 'StudentManagementSystem.Controllers.StudentController.GetAllStudents (StudentManagementSystem)'
+2026-05-13 20:59:29.488 +05:30 [INF] Route matched with {action = "GetAllStudents", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllStudents() on controller StudentManagementSystem.Controllers.StudentController (StudentManagementSystem).
+2026-05-13 20:59:29.614 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Age], [s].[Course], [s].[CreatedDate], [s].[Email], [s].[Name]
+FROM [Students] AS [s]
+2026-05-13 20:59:29.756 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentManagementSystem.Models.Student, StudentManagementSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-13 20:59:29.993 +05:30 [INF] Executed action StudentManagementSystem.Controllers.StudentController.GetAllStudents (StudentManagementSystem) in 387.0397ms
+2026-05-13 20:59:30.342 +05:30 [INF] Executed endpoint 'StudentManagementSystem.Controllers.StudentController.GetAllStudents (StudentManagementSystem)'
+2026-05-13 20:59:30.610 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5296/api/student - 200 null application/json; charset=utf-8 1467.02ms
+2026-05-13 21:00:00.259 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5296/api/student/1 - null null
+2026-05-13 21:00:02.184 +05:30 [INF] CORS policy execution successful.
+2026-05-13 21:00:02.346 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5296/api/student/1 - 204 null null 2087.0546ms
+2026-05-13 21:00:02.792 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5296/api/student/1 - application/json 77
+2026-05-13 21:00:03.520 +05:30 [INF] CORS policy execution successful.
+2026-05-13 21:00:03.535 +05:30 [INF] Executing endpoint 'StudentManagementSystem.Controllers.StudentController.UpdateStudent (StudentManagementSystem)'
+2026-05-13 21:00:03.647 +05:30 [INF] Route matched with {action = "UpdateStudent", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateStudent(Int32, StudentManagementSystem.Models.Student) on controller StudentManagementSystem.Controllers.StudentController (StudentManagementSystem).
+2026-05-13 21:00:03.793 +05:30 [INF] Executed DbCommand (53ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Students] SET [Age] = @p0, [Course] = @p1, [CreatedDate] = @p2, [Email] = @p3, [Name] = @p4
+OUTPUT 1
+WHERE [Id] = @p5;
+2026-05-13 21:00:03.925 +05:30 [INF] Executing OkObjectResult, writing value of type 'StudentManagementSystem.Models.Student'.
+2026-05-13 21:00:04.381 +05:30 [INF] Executed action StudentManagementSystem.Controllers.StudentController.UpdateStudent (StudentManagementSystem) in 717.1598ms
+2026-05-13 21:00:04.567 +05:30 [INF] Executed endpoint 'StudentManagementSystem.Controllers.StudentController.UpdateStudent (StudentManagementSystem)'
+2026-05-13 21:00:04.731 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5296/api/student/1 - 200 null application/json; charset=utf-8 1938.4968ms
+2026-05-13 21:00:07.037 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5296/api/student - null null
+2026-05-13 21:00:07.484 +05:30 [INF] CORS policy execution successful.
+2026-05-13 21:00:07.613 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5296/api/student - 204 null null 576.2734ms
+2026-05-13 21:00:07.984 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5296/api/student - null null
+2026-05-13 21:00:08.145 +05:30 [INF] CORS policy execution successful.
+2026-05-13 21:00:08.158 +05:30 [INF] Executing endpoint 'StudentManagementSystem.Controllers.StudentController.GetAllStudents (StudentManagementSystem)'
+2026-05-13 21:00:08.257 +05:30 [INF] Route matched with {action = "GetAllStudents", controller = "Student"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllStudents() on controller StudentManagementSystem.Controllers.StudentController (StudentManagementSystem).
+2026-05-13 21:00:08.301 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Age], [s].[Course], [s].[CreatedDate], [s].[Email], [s].[Name]
+FROM [Students] AS [s]
+2026-05-13 21:00:08.480 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentManagementSystem.Models.Student, StudentManagementSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-13 21:00:08.633 +05:30 [INF] Executed action StudentManagementSystem.Controllers.StudentController.GetAllStudents (StudentManagementSystem) in 338.4789ms
+2026-05-13 21:00:08.663 +05:30 [INF] Executed endpoint 'StudentManagementSystem.Controllers.StudentController.GetAllStudents (StudentManagementSystem)'
+2026-05-13 21:00:08.780 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5296/api/student - 200 null application/json; charset=utf-8 795.5736ms
